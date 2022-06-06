@@ -1,0 +1,59 @@
+-- Made by kenz
+
+local ScreenGui = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local Predict = Instance.new("TextButton")
+local LineGUI = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+main.Name = "main"
+main.Parent = ScreenGui
+main.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
+main.Position = UDim2.new(0.835156858, 0, 0.522205234, 0)
+main.Size = UDim2.new(0, 212, 0, 300)
+main.Active = true
+main.Draggable = true
+
+
+
+Predict.Name = "Predict"
+Predict.Parent = main
+Predict.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Predict.BackgroundTransparency = 1.000
+Predict.Position = UDim2.new(0.240135938, 0, 0.410040796, 0)
+Predict.Size = UDim2.new(0, 109, 0, 37)
+Predict.Font = Enum.Font.Highway
+Predict.Text = "Predict Wheel (SE)"
+Predict.TextColor3 = Color3.fromRGB(255, 255, 255)
+Predict.TextScaled = true
+Predict.TextSize = 14.000
+Predict.TextWrapped = true
+Predict.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/9tZMx4SW"))()
+end)
+ 
+
+
+LineGUI.Name = "LineGUI"
+LineGUI.Parent = main
+LineGUI.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LineGUI.Position = UDim2.new(0, 0, 0.106666669, 0)
+LineGUI.Size = UDim2.new(0, 212, 0, 4)
+
+Title.Name = "Title"
+Title.Parent = main
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.BorderSizePixel = 0
+Title.Size = UDim2.new(0, 212, 0, 32)
+Title.Font = Enum.Font.Highway
+Title.Text = "Kenz' GUI"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextWrapped = true
